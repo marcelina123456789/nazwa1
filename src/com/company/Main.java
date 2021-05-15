@@ -19,13 +19,15 @@ public class Main {
 
         db.updateName("piotr", 2L);
         user = db.findmyid(2L);
-        System.out.println(user);
+        System.out.println(user + " hello world!");
 
         db.daleteuser(1L);
         boolean b1 = db.isexist(1L);
         boolean b2 = db.isexist(2L);
         System.out.println(b1);
         System.out.println(b2);
+
+        System.out.println("HBello");
 
         Collection<User> lista = db.lista();
 
